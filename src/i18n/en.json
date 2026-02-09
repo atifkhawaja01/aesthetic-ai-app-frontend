@@ -1,0 +1,392 @@
+{
+  "appName": "Lakidis Aesthetic",
+  "tagline": "Your personal beauty consultant",
+  "getStarted": "Get started",
+
+  "nav": {
+    "home": "Home",
+    "scan": "AI Scan",
+    "treatments": "Treatments",
+    "profile": "Profile"
+  },
+
+  "login": "Log in",
+  "signup": "Sign up",
+  "createAccount": "Create your account",
+  "welcomeBack": "Welcome back",
+  "signInToContinue": "Sign in to continue",
+  "signinSubtitle": "Sign in to discover your beauty potential.",
+  "signupSubtitle": "Join us to unlock your personalized beauty insights.",
+  "email": "Email",
+  "password": "Password",
+  "guestMode": "Continue as guest",
+
+  "home": "Home",
+  "scan": "AI Scan",
+  "treatments": "Treatments",
+
+  "upload3Photos": "Upload 3 photos",
+  "cameraTips": "Please face the camera straight on, in good light.",
+
+  "analyze": "Analyze",
+  "analysisReady": "Analysis ready!",
+  "lastReport": "Last report",
+
+  "promoBanner": "This month: 20% off HydraFacial",
+  "catalog": "Treatments catalog",
+  "search": "Search treatments",
+  "searchTreatments": "Search treatments",
+  "suggested": "Suggested treatments",
+  "keyMetrics": "Key metrics",
+  "details": "Details",
+  "symmetry": "Symmetry",
+
+  "save": "Save",
+  "bookNow": "Learn more / Open website",
+  "noReports": "No reports yet",
+  "error": "Something went wrong, please try again",
+  "whyUs": "Why choose us",
+  "safetyAftercare": "Safety & Aftercare",
+
+  "language": "Language",
+  "selectLanguage": "Select language",
+  "english": "English",
+  "greek": "Greek",
+
+  "dialogTitleLanguage": "Language",
+  "applyBtn": "Apply",
+  "cancelBtn": "Cancel",
+
+  "notifications": "Notifications",
+
+  "fullName": "Full name",
+  "contactNumber": "Contact number",
+  "completeProfileSubtitle": "We’ll use this for your booking/contact info",
+  "continue": "Continue",
+  "logout": "Logout",
+  "profileSaved": "Profile saved",
+
+  "notYouStartOver": "Not you? Start over",
+  "sessionExpired": "Session expired",
+  "pleaseSignInAgain": "Please sign up or log in again.",
+
+  "enterEmailPassword": "Please enter email & password",
+  "enterNamePhone": "Please enter your name and contact number",
+
+  "emailExists": "Email already exists",
+  "emailNoAccount": "This email has no account",
+  "invalidEmailPassword": "Invalid email or password",
+  "unableToSignUp": "Unable to sign up",
+  "unableToLogIn": "Unable to log in",
+
+  "theme": "Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "face": "Face",
+  "skin": "Skin",
+  "body": "Body",
+  "hair": "Hair",
+
+  "noAccount": "Don't have an account?",
+  "haveAccount": "Already have an account?",
+  "ctaLine": "Join thousands discovering their beauty with AI",
+  "disclaimer": "Disclaimer: Results are for informational purposes only and not a medical diagnosis.",
+
+  "saving": "Saving…",
+
+  "unlockYourBestLook": "Unlock your best look",
+  "scanYourFace": "Scan your face with AI for instant insights and personalized treatment suggestions tailored to you.",
+  "dontWaitDiscover": "Don’t wait — discover what your skin really needs today!",
+  "startScanNow": "Start scan now",
+
+  "aiDrivenAccuracy": "AI-driven accuracy",
+  "nonInvasiveOptions": "Non-invasive options first",
+  "easyAftercareGuidance": "Easy aftercare guidance",
+  "transparentPricing": "Transparent pricing",
+  "clinicGradePrivacy": "Clinic-grade privacy & security",
+
+  "safetyInfo1": "Most procedures may cause temporary redness or swelling. Avoid intense exercise and heat exposure for 24–48h.",
+  "safetyInfo2": "Always follow your clinician’s personalized aftercare advice for the best recovery and results.",
+
+  "tryAgain": "Please try again",
+
+  "skip": "Skip",
+  "next": "Next",
+  "getStartedBtn": "Get Started",
+
+  "report": "Report",
+  "summary": "Summary",
+  "aiReport": "AI Report",
+  "suggestedTreatments": "Suggested Treatments",
+  "bookAppointment": "Book Appointment",
+  "reportNotFound": "Report not found.",
+  "reportReady": "Report ready",
+  "pdfGenerated": "PDF has been generated and shared.",
+  "pdfError": "Could not generate PDF report.",
+  "duration": "Duration",
+  "price": "Price",
+  "cost": "Cost",
+
+  "frontFace": "Front Face",
+  "leftProfile": "Left Profile",
+  "rightProfile": "Right Profile",
+  "upload": "Upload",
+
+  "permissionRequired": "Permission required",
+  "allowPhotos": "Please allow photo library access.",
+  "allowCamera": "Please allow camera access.",
+
+  "uploadingPhotos": "Uploading photos…",
+  "analyzingFace": "Analyzing face…",
+
+  "noFaceTitle": "No face detected",
+  "noFaceMsg": "Use clear, front-facing photos with eyes visible, then try again.",
+
+  "missingPhotosTitle": "Missing photos",
+  "missingPhotosMsg": "Please select front, left and right photos first.",
+
+  "invalidFileTitle": "Invalid file",
+  "invalidFileMsg": "Only image files are allowed.",
+
+  "analysisFailedTitle": "Analysis failed",
+  "analysisFailedMsg": "Please try again.",
+
+  "disclaimerTitle": "Disclaimer",
+  "disclaimerText": "The information provided through this application is for informational purposes only and does not constitute medical advice or diagnosis. A personalized assessment and medical decision-making always require a clinical examination and direct consultation with a qualified physician.",
+
+  "selectSource": "Select source",
+  "takePhoto": "Take Photo",
+  "uploadFromGallery": "Upload",
+  "working": "Working…",
+
+  "viewMore": "View more",
+  "comingSoon": "Coming soon",
+  "linkWillBeAddedSoon": "The website link will be added shortly.",
+  "unableToOpen": "Unable to open",
+  "pleaseTryAgain": "Please try again later.",
+  "couldNotOpen": "Could not open link.",
+
+  "completeProfile": {
+    "enterNamePhone": "Please enter your name and phone number.",
+    "title": "Complete your profile",
+    "subtitle": "We need a few more details to finish setting up your account.",
+    "fullName": "Full Name",
+    "contactNumber": "Contact Number",
+    "signOut": "Sign Out"
+  },
+
+  "common": {
+    "tryAgain": "Please try again.",
+    "sessionExpired": "Session expired",
+    "pleaseLoginAgain": "Please log in again.",
+    "error": "Error",
+    "saving": "Saving...",
+    "continue": "Continue",
+    "loading": "Loading...",
+    "save": "Save",
+    "logout": "Logout",
+    "change": "Change",
+    "close": "Close",
+    "saveChanges": "Save changes",
+    "on": "On",
+    "off": "Off"
+  },
+
+  "onboarding1Title": "Welcome to Our App",
+  "onboarding1Subtitle": "Your journey begins here. Discover powerful features.",
+  "onboarding2Title": "Track Your Progress",
+  "onboarding2Subtitle": "Stay updated and monitor your goals effortlessly.",
+  "onboarding3Title": "AI-Powered Insights",
+  "onboarding3Subtitle": "Get personalized tips and suggestions with smart AI.",
+  "onboarding4Title": "Ready to Begin?",
+  "onboarding4Subtitle": "Let’s get started and unlock your potential!",
+
+  "forgotPassword": "Forgot password?",
+  "enterYourEmail": "Enter your registered email to receive a verification code.",
+  "invalidEmail": "Invalid email",
+  "verificationCode": "Verification code",
+  "codeSentTo": "Enter the 6-digit code sent to",
+  "enterCode": "Enter code",
+  "invalidCode": "Invalid code",
+  "setNewPassword": "Set new password",
+  "newPassword": "New password",
+  "confirmPassword": "Confirm password",
+  "passwordTooShort": "Password too short",
+  "passwordsDontMatch": "Passwords do not match",
+  "saveAndLogin": "Save & Login",
+
+  "noResults": "No treatments found.",
+  "failedToLoad": "Failed to load treatments.",
+
+  "history": {
+    "title": "History",
+    "signInRequired": "Sign in to view history",
+    "signInHint": "Please log in to see your saved reports.",
+    "emptyTitle": "No history yet",
+    "emptyHint": "Run an analysis to see reports here.",
+    "viewReport": "View report",
+    "download": "Download",
+    "downloadHint": "Your report will be downloaded soon.",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "lastMonth": "This Month",
+    "older": "Older",
+    "filters": "Filters",
+    "all": "All",
+    "last7days": "Last 7 days",
+    "last30days": "Last 30 days",
+    "sort": "Sort",
+    "newestFirst": "Newest first",
+    "oldestFirst": "Oldest first",
+    "clearHistory": "Clear history",
+    "confirmClearHistory": "Are you sure you want to clear your history?",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+
+  "homePage": {
+    "heroTitle": "Intelligent AI analysis for modern needs",
+    "heroSubtitle": "Upload your photos and let our advanced AI analyze, process, and deliver actionable aesthetic insights in seconds.",
+    "ctaGetStarted": "Get started",
+    "ctaViewHistory": "View history",
+
+    "whyTitle": "Why choose Aesthetic AI",
+    "whySubtitle": "Discover the difference with our cutting-edge AI technology",
+
+    "features": {
+      "f1Title": "Advanced AI technology",
+      "f1Desc": "State-of-the-art algorithms provide clinical-grade accuracy in facial analysis and recommendations.",
+      "f2Title": "Military-grade security",
+      "f2Desc": "Your data is protected with enterprise-level encryption and strict privacy protocols.",
+      "f3Title": "Progress tracking",
+      "f3Desc": "Monitor your journey with detailed historical reports and comparisons.",
+      "f4Title": "Smart recommendations",
+      "f4Desc": "Personalized suggestions based on your unique features and goals.",
+      "f5Title": "Professional insights",
+      "f5Desc": "Clinically-relevant info to help you make informed decisions.",
+      "f6Title": "Beautiful results",
+      "f6Desc": "Achieve your aesthetic goals with precise, data-driven guidance."
+    },
+
+    "howTitle": "How it works",
+    "howSubtitle": "Simple three-step process to get your personalized analysis",
+    "steps": {
+      "s1Step": "01",
+      "s1Title": "Upload photos",
+      "s1Desc": "Upload three clear photos (front, left, right) for comprehensive analysis.",
+      "s2Step": "02",
+      "s2Title": "AI analysis",
+      "s2Desc": "We analyze facial symmetry, skin quality, and aesthetic features.",
+      "s3Step": "03",
+      "s3Title": "Get results",
+      "s3Desc": "Receive a detailed report with personalized recommendations."
+    },
+
+    "stats": {
+      "a": "Accuracy rate",
+      "b": "Analyses completed",
+      "c": "User satisfaction",
+      "d": "Support available"
+    },
+
+    "ctaTitle": "Ready to transform your look?",
+    "ctaSubtitle": "Join thousands who discovered their best look with our AI analysis.",
+    "ctaStart": "Start your analysis now",
+
+    "discTitle": "Important medical disclaimer",
+    "discText": "Always follow your clinician’s personalized aftercare advice for the best recovery and results. Our AI analysis provides recommendations but should not replace professional medical advice. Consult with qualified healthcare professionals before making any decisions about treatments or procedures."
+  },
+
+  "all": "All",
+  "category": "Category",
+  "viewDetails": "View details",
+  "hideDetails": "Hide details",
+
+  "common.change": "Change",
+  "common.close": "Close",
+  "common.saveChanges": "Save changes",
+  "common.on": "On",
+  "common.off": "Off",
+
+  "profile": {
+    "myProfile": "My Profile",
+    "title": "My Profile",
+    "email": "Email",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Your name",
+    "fullNamePh": "Enter your full name",
+    "contactNumber": "Contact Number",
+    "contactNumberPh": "Enter your number",
+    "language": "Language",
+    "notifications": "Notifications",
+    "notificationsHint": "Email reminders and important updates",
+    "profileSaved": "Profile saved",
+    "saved": "Saved",
+    "updateFailed": "Update failed",
+    "avatar": "Avatar",
+    "avatarAlt": "Avatar",
+    "changePhoto": "Change photo",
+    "photoPrivacy": "Your profile photo is only stored on this device for privacy and is not uploaded to our servers.",
+    "photoLocalNote": "Your profile photo is only stored on this device for privacy and is not uploaded to our servers.",
+    "accountDetails": "Account details",
+    "preferences": "Preferences",
+    "toggleNotifications": "Toggle notifications",
+    "saveChanges": "Save changes",
+    "saving": "Saving…",
+    "yourName": "Your name"
+  },
+
+  "lang": {
+    "en": "English",
+    "el": "Greek"
+  },
+
+  "auth": {
+    "logout": "Log out"
+  },
+
+  "camera": "Camera",
+  "startAnalysis": "Start analysis",
+  "pleaseWait": "Please wait…",
+  "privacyNote": "Your photos are processed securely and used only to generate your report.",
+  "noFaceDetected": "No face detected. Please try clearer photos.",
+
+
+  "completeProfilePage": {
+    "title": "Complete Your Profile",
+    "subtitle": "Add your details for personalized reports and better experience",
+    "infoText": "📋 This information will be included in your AI analysis reports",
+    "fullName": "Full Name *",
+    "fullNamePlaceholder": "Enter your full name",
+    "contactNumber": "Contact Number *",
+    "contactNumberPlaceholder": "+1 234 567 8900",
+    "dateOfBirth": "Date of Birth",
+    "gender": "Gender",
+    "genderPlaceholder": "Select gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "preferNotToSay": "Prefer not to say",
+    "saveContinue": "Save & Continue",
+    "saving": "Saving...",
+    "skipForNow": "Skip for now",
+    "personalizeJourney": "Personalize Your Aesthetic Journey",
+    "personalizeDescription": "Complete your profile to get tailored AI analysis and detailed reports with your personal information.",
+    "failedToUpdate": "Failed to update profile"
+  },
+  
+ 
+  "signInSubtitle": "Sign in to continue to your AI dashboard",
+
+  "invalidEmailOrPassword": "Invalid email or password",
+ 
+ 
+  "enterEmail": "Please enter your email.",
+  "enterPassword": "Please enter a password.",
+ 
+  "emailAlreadyRegistered": "Email already registered"
+
+
+
+  
+}
