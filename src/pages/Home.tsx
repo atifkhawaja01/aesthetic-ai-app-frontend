@@ -6,8 +6,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  // ✅ Use BASE_URL so public assets work under tunnels/subpaths
-  const logoSrc = `${import.meta.env.BASE_URL}assets/clinic_logo.png`;
+  // Demo: no clinic logo/branding
 
   return (
     <>
@@ -588,9 +587,9 @@ const Home: React.FC = () => {
               {/* Right card */}
               <div className="hero-card">
                 <div style={{textAlign:"center"}}>
-                  {/* 🔹 Replaced star with logo image */}
+                  {/* Neutral badge (no clinic logo) */}
                   <div className="logo-badge">
-                    <img src={logoSrc} alt="Brand Logo" className="logo-img" />
+                    <span style={{ fontSize: 46, lineHeight: 1 }}>🤖</span>
                   </div>
                   <h3>{t("homePage.features.f1Title")}</h3>
                   <p>{t("homePage.features.f1Desc")}</p>

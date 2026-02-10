@@ -1,5 +1,5 @@
 
-# Lakidis Aesthetic — Web Frontend (Vite + React)
+# AI Facial Aesthetic Model — Web Frontend (Vite + React)
 
 ## Requirements
 - Node.js 18+

@@ -12,7 +12,8 @@ type Slide = {
 const SLIDES: Slide[] = [
   { id: "1", image: "/assets/onboarding/slide1.png", titleKey: "onboarding1Title", subtitleKey: "onboarding1Subtitle" },
   { id: "2", image: "/assets/onboarding/slide2.png", titleKey: "onboarding2Title", subtitleKey: "onboarding2Subtitle" },
-  { id: "3", image: "/assets/onboarding/slide3.png", titleKey: "onboarding3Title", subtitleKey: "onboarding3Subtitle" },
+  // Slide 3: keep clean (no doctor/clinic image)
+  { id: "3", image: "", titleKey: "onboarding3Title", subtitleKey: "onboarding3Subtitle" },
   { id: "4", image: "/assets/onboarding/doctor12345.png", titleKey: "onboarding4Title", subtitleKey: "onboarding4Subtitle" },
 ];
 
@@ -23,8 +24,7 @@ const Onboarding: React.FC = () => {
   const [idx, setIdx] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // ✅ Correct path for logo
-  const logoSrc = `${import.meta.env.BASE_URL}assets/clinic_logo.png`;
+  // Demo: no clinic logo/branding
 
   /* ---------- Keyboard arrows ---------- */
   useEffect(() => {
@@ -497,7 +497,7 @@ const Onboarding: React.FC = () => {
         <div className="onb-header">
           <div className="brand" aria-label={titles.appName}>
             <div className="brand-badge" aria-hidden>
-              <img src={logoSrc} alt="Logo" className="brand-logo" />
+              <span style={{ fontSize: 26, lineHeight: 1 }}>🤖</span>
             </div>
             <div className="brand-title">{titles.appName}</div>
           </div>
@@ -519,18 +519,20 @@ const Onboarding: React.FC = () => {
                 {SLIDES.map((s) => (
                   <section className="slide" key={s.id}>
                     <div className="slide-image-container">
-                      <img
-                        src={s.image}
-                        alt=""
-                        onError={(e) => { 
-                          (e.currentTarget as HTMLImageElement).style.display = "none";
-                          const placeholder = document.createElement('div');
-                          placeholder.className = 'image-placeholder';
-                          placeholder.innerHTML = '🖼️';
-                          e.currentTarget.parentNode?.appendChild(placeholder);
-                        }}
-                        loading="eager"
-                      />
+                      {s.image ? (
+                        <img
+                          src={s.image}
+                          alt=""
+                          onError={(e) => { 
+                            (e.currentTarget as HTMLImageElement).style.display = "none";
+                            const placeholder = document.createElement('div');
+                            placeholder.className = 'image-placeholder';
+                            placeholder.innerHTML = '🖼️';
+                            e.currentTarget.parentNode?.appendChild(placeholder);
+                          }}
+                          loading="eager"
+                        />
+                      ) : null}
                     </div>
                     <div className="slide-copy">
                       <h2>{t(s.titleKey) || "Intelligent AI Analysis"}</h2>

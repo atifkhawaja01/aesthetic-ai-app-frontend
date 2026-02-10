@@ -103,7 +103,7 @@ function ensurePdfMake(): Promise<void> {
   });
 }
 
-/* --------- Load clinic logo and convert to base64 (avoid CORS issues) ---- */
+/* --------- Demo: no clinic logo in PDF ---- */
 async function toDataURL(url: string): Promise<string> {
   const res = await fetch(url, { mode: "cors" });
   if (!res.ok) throw new Error("logo fetch failed");
@@ -117,18 +117,7 @@ async function toDataURL(url: string): Promise<string> {
 }
 
 async function loadLogoBase64(): Promise<string | null> {
-  const candidates = [
-    "/assets/clinic_logo.png",
-    `${(window as any).PUBLIC_URL || ""}/assets/clinic_logo.png`,
-    `${window.location.origin}/assets/clinic_logo.png`,
-    "/clinic_logo.png",
-  ];
-  for (const u of candidates) {
-    try {
-      const data = await toDataURL(u);
-      return data;
-    } catch {}
-  }
+  // Keep PDFs neutral for demos
   return null;
 }
 
@@ -250,39 +239,31 @@ const Report: React.FC = () => {
         ctaTitle: { fontSize: 12, bold: true, color: "#0369a1", margin: [0, 0, 0, 4] },
       },
       header: (currentPage: number) => {
-        // first page header with teal background + logo
         if (currentPage > 1) return {};
         return {
           margin: [0, 0, 0, 12],
           table: {
-            widths: [70, "*"],
+            widths: ["*"],
             body: [
               [
-                logoData ? { image: logoData, width: 70, alignment: "left", margin: [12, 8, 0, 8] } : { text: "" },
                 {
-                  margin: [0, 8, 12, 8],
+                  margin: [12, 10, 12, 10],
                   stack: [
-                    { text: "Dr Antonios Medical Clinic", bold: true, color: "#fff" },
-                    { text: "Ermou 53, 5th floor, Thessaloniki 546 23", color: "#fff" },
-                    { text: "Tel: 2317 004 222 | Mob: 6944 275 175", color: "#fff" },
-                    { text: "Email: alakidis@gmail.com", color: "#fff" },
+                    { text: "AI Facial Aesthetic Model", bold: true, color: "#fff", fontSize: 14 },
+                    { text: "Demo report (no clinic branding)", color: "#fff" },
                   ],
                 },
               ],
             ],
           },
-          layout: {
-            fillColor: () => "#19a3a3",
-            hLineWidth: () => 0,
-            vLineWidth: () => 0,
-          },
+          layout: { fillColor: () => "#19a3a3", hLineWidth: () => 0, vLineWidth: () => 0 },
         };
       },
       footer: () => ({
         margin: [0, 8, 0, 0],
         columns: [
           {
-            text: "© 2025 Dr Antonios | www.alakidisaesthetic.gr | alakidis@gmail.com | Dr Antonios (Doctor)",
+            text: "AI Facial Aesthetic Model — Demo PDF",
             alignment: "center",
             color: "#19a3a3",
             fontSize: 9,
@@ -290,7 +271,7 @@ const Report: React.FC = () => {
         ],
       }),
       content: [
-        { text: "PATIENT MEDICAL REPORT", style: "h1", alignment: "center" },
+        { text: "AI FACIAL AESTHETIC REPORT", style: "h1", alignment: "center" },
 
 { text: "Patient Report", style: "h2" },
 { text: `Report ID: ${r.id}${r.createdAt ? `   •   Date: ${dateStr}` : ""}`, style: "muted", margin: [0, 2, 0, 0] },
@@ -314,57 +295,7 @@ const Report: React.FC = () => {
         { text: "⚠️ Disclaimer", style: "h2" },
         { text: disclaimer, style: "muted" },
 
-        // Call-to-Action Section - Added right after the report ends
-        { text: "🚀 Your Next Steps", style: "h3", margin: [0, 20, 0, 8] },
-        
-        {
-          table: {
-            widths: ["*"],
-            body: [
-              [
-                {
-                  stack: [
-                    { text: "📧 Share Your Report", style: "ctaTitle" },
-                    { text: "Email your report to our specialists for personalized feedback:", margin: [0, 2, 0, 4] },
-                    { text: "alakidis@gmail.com", bold: true, color: "#19a3a3", margin: [0, 0, 0, 8] },
-                    
-                    { text: "📞 Quick Consultation", style: "ctaTitle", margin: [0, 8, 0, 0] },
-                    { text: "Prefer to speak directly? Call us at:", margin: [0, 2, 0, 4] },
-                    { text: "+30 231 700 4222", bold: true, color: "#19a3a3", margin: [0, 0, 0, 8] },
-                    
-                    { text: "🎯 Book Your Appointment", style: "ctaTitle", margin: [0, 8, 0, 0] },
-                    { text: "Ready to take the next step? Schedule your consultation:", margin: [0, 2, 0, 4] },
-                    { 
-                      text: "👉 Book Now: https://lakidisaesthetics.setmore.com/?lang=Greek", 
-                      bold: true, 
-                      color: "#dc2626",
-                      link: "https://lakidisaesthetics.setmore.com/?lang=Greek",
-                      margin: [0, 0, 0, 4]
-                    },
-                  ],
-                  margin: [12, 8],
-                }
-              ]
-            ]
-          },
-          layout: {
-            fillColor: () => "#f0f9ff",
-            hLineWidth: () => 1,
-            vLineWidth: () => 1,
-            hLineColor: () => "#bae6fd",
-            vLineColor: () => "#bae6fd",
-          },
-          margin: [0, 8, 0, 0]
-        },
-
-        // Final encouragement
-        {
-          text: "Your journey to better skin starts here! We look forward to helping you achieve your aesthetic goals.",
-          alignment: "center",
-          italics: true,
-          color: "#475569",
-          margin: [0, 16, 0, 0]
-        }
+        // Demo: client-specific next-steps/booking removed
       ],
     };
 
@@ -600,11 +531,7 @@ const Report: React.FC = () => {
                 </p>
               </div>
 
-              <div className="cta-row">
-                <a className="cta wide" href="https://lakidisaesthetics.setmore.com/" target="_blank" rel="noopener noreferrer">
-                  📅 BOOK APPOINTMENT
-                </a>
-              </div>
+              {/* Demo: remove clinic booking CTA */}
             </>
           )}
         </div>

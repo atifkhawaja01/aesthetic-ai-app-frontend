@@ -18,7 +18,8 @@ type Treatment = {
 /* ------------------------------- Constants -------------------------------- */
 
 const CATS: Category[] = ["All", "Face", "Skin", "Body", "Hair"];
-const VIEW_URL = "https://lakidisaesthetic.gr/";
+// Demo: keep generic (no clinic website)
+const VIEW_URL = "https://example.com/";
 
 /* -------------------------- Category normalization ------------------------ */
 

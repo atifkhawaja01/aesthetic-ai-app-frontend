@@ -76,19 +76,7 @@ const NavBar: React.FC = () => {
           background-clip: text;
         }
         
-        .brand img{ 
-          height: 40px; 
-          width: 40px; 
-          border-radius: 10px; 
-          border: 2px solid var(--accent);
-          box-shadow: 0 0 20px var(--accent-glow);
-          transition: all 0.3s ease;
-        }
-        
-        .brand:hover img {
-          transform: scale(1.05);
-          box-shadow: 0 0 30px var(--accent-glow);
-        }
+        /* brand logo removed for demo neutrality */
 
         .nav{ 
           display: flex; 
@@ -438,8 +426,7 @@ const NavBar: React.FC = () => {
       {/* Premium Topbar for desktop */}
       <header className="topbar glass">
         <div className="brand">
-          <img src="/assets/clinic_logo.png" alt="Clinic logo" onError={(e: any) => (e.currentTarget.style.display = "none")} />
-          <span>{safeT("appName", "Lakidis Aesthetic")}</span>
+          <span>{safeT("appName", "AI Facial Aesthetic Model")}</span>
         </div>
 
         {auth && (

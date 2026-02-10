@@ -730,39 +730,11 @@ const Profile: React.FC = () => {
                 {t("profile.contactUs", "Contact Us")}
               </h3>
               <p className="contact-subtitle">
-                {t("profile.contactSubtitle", "Get in touch with Lakidis Aesthetic Clinic")}
+                {t("profile.contactSubtitle", "Demo contact details are not configured.")}
               </p>
             </div>
             
             <div className="contact-grid">
-              <div className="contact-item">
-                <div className="contact-icon">📞</div>
-                <div className="contact-content">
-                  <div className="contact-label">
-                    {t("profile.primaryPhone", "Primary Phone")}
-                  </div>
-                  <div className="contact-value">
-                    <a href="tel:2317004222" className="contact-link">
-                      2317 004 222
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="contact-item">
-                <div className="contact-icon">📱</div>
-                <div className="contact-content">
-                  <div className="contact-label">
-                    {t("profile.mobilePhone", "Mobile Phone")}
-                  </div>
-                  <div className="contact-value">
-                    <a href="tel:6944275175" className="contact-link">
-                      6944 275 175
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
               <div className="contact-item">
                 <div className="contact-icon">✉️</div>
                 <div className="contact-content">
@@ -770,52 +742,22 @@ const Profile: React.FC = () => {
                     {t("profile.emailAddress", "Email Address")}
                   </div>
                   <div className="contact-value">
-                    <a href="mailto:alakidis@gmail.com" className="contact-link">
-                      alakidis@gmail.com
+                    <a href="mailto:demo@example.com" className="contact-link">
+                      demo@example.com
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            
-            <a 
-              href="https://lakidisaesthetic.gr/" 
-              target="_blank" 
+
+            <a
+              href="https://example.com/"
+              target="_blank"
               rel="noopener noreferrer"
               className="website-btn"
             >
-              🌐 {t("profile.visitWebsite", "Visit Our Website")}
+              🌐 {t("profile.visitWebsite", "Visit Website")}
             </a>
-            
-<div className="social-links">
-  <a
-    href="https://www.instagram.com/lakidis/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn"
-    title="Instagram"
-  >
-    <img
-      src={`${import.meta.env.BASE_URL}assets/insta-ico.png`}
-      alt="Instagram"
-      style={{ width: "26px", height: "26px", objectFit: "contain" }}
-    />
-  </a>
-
-  <a
-    href="https://www.facebook.com/LA.AestheticMed/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="social-btn"
-    title="Facebook"
-  >
-    <img
-      src={`${import.meta.env.BASE_URL}assets/facebook-icon.png`}
-      alt="Facebook"
-      style={{ width: "26px", height: "26px", objectFit: "contain" }}
-    />
-  </a>
-</div>
 
             
             <div className="modal-cancel">

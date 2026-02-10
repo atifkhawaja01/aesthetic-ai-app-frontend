@@ -167,15 +167,7 @@ async function toDataURL(url: string): Promise<string> {
   });
 }
 async function loadLogoBase64(): Promise<string | null> {
-  const candidates = [
-    "/assets/clinic_logo.png",
-    `${(window as any).PUBLIC_URL || ""}/assets/clinic_logo.png`,
-    `${window.location.origin}/assets/clinic_logo.png`,
-    "/clinic_logo.png",
-  ];
-  for (const u of candidates) {
-    try { return await toDataURL(u); } catch {}
-  }
+  // Demo: keep PDFs neutral (no clinic branding)
   return null;
 }
 
@@ -273,17 +265,14 @@ function buildDocDefinition(r: ReportType, dateStr: string, logoData?: string | 
       return {
         margin: [0, 0, 0, 12],
         table: {
-          widths: [70, "*"],
+          widths: ["*"],
           body: [
             [
-              logoData ? { image: logoData, width: 70, alignment: "left", margin: [12, 8, 0, 8] } : { text: "" },
               {
-                margin: [0, 8, 12, 8],
+                margin: [12, 10, 12, 10],
                 stack: [
-                  { text: "Dr Antonios Medical Clinic", bold: true, color: "#fff" },
-                  { text: "Ermou 53, 5th floor, Thessaloniki 546 23", color: "#fff" },
-                  { text: "Tel: 2317 004 222 | Mob: 6944 275 175", color: "#fff" },
-                  { text: "Email: alakidis@gmail.com", color: "#fff" },
+                  { text: "AI Facial Aesthetic Model", bold: true, color: "#fff", fontSize: 14 },
+                  { text: "Demo report (no clinic branding)", color: "#fff" },
                 ],
               },
             ],
@@ -296,7 +285,7 @@ function buildDocDefinition(r: ReportType, dateStr: string, logoData?: string | 
       margin: [0, 8, 0, 0],
       columns: [
         {
-          text: "© 2025 Dr Antonios | www.alakidisaesthetic.gr | alakidis@gmail.com | Dr Antonios (Doctor)",
+          text: "AI Facial Aesthetic Model — Demo PDF",
           alignment: "center",
           color: "#19a3a3",
           fontSize: 9,

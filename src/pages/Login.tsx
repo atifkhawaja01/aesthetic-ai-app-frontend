@@ -17,8 +17,7 @@ const Login: React.FC = () => {
   const [err, setErr] = useState<string | null>(null);
   const [langOpen, setLangOpen] = useState(false);
 
-  // ✅ Correct path for images inside /public/assets
-  const logoSrc = `${import.meta.env.BASE_URL}assets/clinic_logo.png`;
+  // Demo: no clinic logo/branding
 
   const nextFromQuery = (() => {
     try {
@@ -689,9 +688,9 @@ const Login: React.FC = () => {
 
         {/* Login Form Card */}
         <div className="auth-card">
-          {/* Logo inside glowing badge */}
+          {/* Neutral badge */}
           <div className="brand-badge" aria-hidden>
-            <img src={logoSrc} alt="Brand Logo" className="brand-logo" />
+            <span style={{ fontSize: 34, lineHeight: 1 }}>🤖</span>
           </div>
 
           <h1 className="auth-title">{t("welcomeBack") || "Welcome back"}</h1>
@@ -757,8 +756,8 @@ const Login: React.FC = () => {
         {/* Left Side - Background Image with Enhanced Content for Desktop */}
         <div className="auth-left-side">
           <div className="side-content">
-            <div className="side-logo">
-              <img src={logoSrc} alt="Lakidis Aesthetic Logo" />
+            <div className="side-logo" aria-hidden>
+              <span style={{ fontSize: 72, lineHeight: 1 }}>🤖</span>
             </div>
             
             <div className="tagline">AI-Powered Aesthetic Solutions</div>
@@ -792,7 +791,7 @@ const Login: React.FC = () => {
             {/* Login Form */}
             <div className="auth-left-desktop">
               <div className="brand-badge-desktop" aria-hidden>
-                <img src={logoSrc} alt="Brand Logo" className="brand-logo-desktop" />
+                <span style={{ fontSize: 34, lineHeight: 1 }}>🤖</span>
               </div>
 
               <h1 className="auth-title-desktop">{t("welcomeBack") || "Welcome back"}</h1>
